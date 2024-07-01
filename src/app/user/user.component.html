@@ -1,1 +1,14 @@
-<p>user works!</p>
+<section>
+    @if (isLoggedIn) {
+        <p>Bienvenido {{ username }}</p>
+        <img (auxclick)="greet()"
+        src="https://github.com/Ivan93LA.png" 
+        alt="photo">
+    } @else{
+    
+        <p>Inicia sesión</p>
+    }
+
+    <app-games></app-games>
+</section>
+

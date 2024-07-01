@@ -6,7 +6,7 @@ import { UserComponent } from './user/user.component';
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet, UserComponent],
-  template: ` <h1> Hola mundo desde Angular y desde {{city.toUpperCase()}} </h1> 
+  template: `  
   <app-user /> `,
   styles: ` `
 })
