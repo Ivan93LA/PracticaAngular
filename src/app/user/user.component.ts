@@ -10,7 +10,13 @@ import { GamesComponent } from '../games/games.component';
 })
 export class UserComponent {
   username = "IvanLA";
-  isLoggedIn = true
+  isLoggedIn = false
+  favGame = '';
+  
+  gerFavorite (gameName:string) {
+    this.favGame = gameName;
+
+  }
 
   greet(){
 
