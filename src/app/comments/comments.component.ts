@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   template: `
-    <h3>Comentarios finales</h3>
+    <h3>Comentario final de la práctica de Angular</h3>
     <img src="https://github.com/Ivan93LA.png" />
     <p>
      Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
@@ -18,7 +18,7 @@ import { Component } from '@angular/core';
   styles: `
   img {
     width: 100%;
-    height: auto;
+    height: auto;   
 
   }`,
 })

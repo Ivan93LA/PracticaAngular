@@ -11,7 +11,16 @@
             harum est officiis eaque itaque fugit eius suscipit doloribus vero excepturi asperiores error illum. Ullam,
             exercitationem.
         </p>
-    </article>
-    <app-comments></app-comments>
-</div>
 
+    </article>
+    @defer (on viewport) {
+    <!-- Hace cargas diferidas de los commpomentes que hay -->
+    <app-comments></app-comments>
+    } @placeholder {
+    <p>Futuros comentarios</p>
+    } @loading (minimum 2s) {
+    <p>Cargando comentarios...</p>
+
+    }
+
+</div>
